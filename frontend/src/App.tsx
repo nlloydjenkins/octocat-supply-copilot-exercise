@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
+import BlackFridayBanner from './components/BlackFridayBanner';
 import Welcome from './components/Welcome';
 import About from './components/About';
 import Footer from './components/Footer';
@@ -14,6 +15,7 @@ function App() {
       <Router>
         <div className="flex flex-col min-h-screen bg-dark">
           <Navigation />
+          <BlackFridayBanner />
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Welcome />} />
